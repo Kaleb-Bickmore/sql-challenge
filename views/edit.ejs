@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Users</title>
+  </head>
+  <body>
+    <% user.forEach(function(user){ %>
+    <h2 ><%user.title%></h2>
+    <h3>by +<%user.name%><h3>
+    <p><%user.content%></p>
+    <button href="./edit/<%user.name:user.id%>" >edit</button>
+  </body>
+  <footer>
+    <ul href="./views/edit">edit</ul>
+    <ul href="./views/new.ejs">new</ul>
+    <ul href="./views/index.ejs">index</ul>
+  </footer>
+</html>
